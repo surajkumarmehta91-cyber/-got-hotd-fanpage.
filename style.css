@@ -457,22 +457,14 @@ a.instagram-link {
 .instagram-link .insta-arrow {
   font-size: 16px !important;
 }
-
-/* Keep desktop-style layout on mobile */
+/* Desktop layout on mobile */
 @media screen and (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .houses-grid,
-  .house-grid,
-  .houses-container,
-  .reels-grid,
-  .reel-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  body {
+    min-width: 1024px;
+    overflow-x: auto;
   }
 }
 
-}
+
 
 }
