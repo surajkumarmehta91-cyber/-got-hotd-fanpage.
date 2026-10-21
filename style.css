@@ -468,3 +468,27 @@ a.instagram-link {
 
 
 }
+.hero {
+  background:
+    linear-gradient(90deg, #090707 0%, transparent 65%),
+    radial-gradient(ellipse at 75% 35%, #29100d 0%, #090909 75%);
+}
+
+.hero-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  z-index: 1;
+}
+
+.hero-content,
+.hero-bottom {
+  z-index: 2;
+}
+
