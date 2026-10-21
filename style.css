@@ -458,10 +458,26 @@ a.instagram-link {
   font-size: 16px !important;
 }
 
-/* Desktop layout on mobile */
+/* Keep desktop layout on mobile */
 @media screen and (max-width: 768px) {
+  html {
+    min-width: 1024px;
+  }
+
   body {
     min-width: 1024px;
+    width: 1024px;
     overflow-x: auto;
   }
+
+  .houses-grid,
+  .house-grid,
+  .houses-container,
+  .reels-grid,
+  .reel-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    display: grid !important;
+  }
+}
+
 }
