@@ -457,3 +457,11 @@ a.instagram-link {
 .instagram-link .insta-arrow {
   font-size: 16px !important;
 }
+
+/* Desktop layout on mobile */
+@media screen and (max-width: 768px) {
+  body {
+    min-width: 1024px;
+    overflow-x: auto;
+  }
+}
