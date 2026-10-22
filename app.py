@@ -252,6 +252,12 @@ def existing_files(filename):
     return send_from_directory(BASE_DIR, filename)
 
 
+
+# Additive READ feature blueprint. Existing routes and messages admin remain intact.
+from read_feature import read_bp
+app.register_blueprint(read_bp)
+
+
 # Create the table in Neon when the app starts.
 init_db()
 
